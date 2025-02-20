@@ -5,6 +5,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>title</title>
+    <style>
+        .hr{
+            background-color: darkmagenta;
+            display: none;
+        }
+        
+        .hr_show:hover + .hr {
+            display: block;
+
+        }
+    </style>
 </head>
 
 <body>
@@ -25,10 +36,11 @@
         <span>텍스트태그</span>
         공부중
     </p>
-    <p>p태그는 단락
+    <p class="hr_show">p태그는 단락
         <br>
         태그입니다
     </p>
+    <hr class="hr">
 </body>
 
 </html>
