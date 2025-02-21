@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>폼양식태그</title>
+    <style>
+        input{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <form name="user" autocomplete="on">
+        <input type="text">
+        <!-- checkout: 중복선택 가능 -->
+        <input type="checkbox">
+        <input type="password">
+        <input type="number">
+        <input type="email">
+        <input type="submit">
+        <input type="tel">
+
+        <!-- radio: name을 똑같이 지정하면 중복선택 불가 -->
+        <input type="radio" name="gender">남자
+        <input type="radio" name="gender">여자
+        <input type="date">
+        <input type="button" value="버튼입니다">
+    </form>
+    <!-- 
+        1. action: 데이터를 전송할 서버의 주소 지정
+        2. method: POST / GET 으로 서버와 데이터를 주고받는 방식
+        3. autoComplete: 자동완성 기능(사용자가 어떤것을 입력했을 때 이전에 제공받은 값을 기반으로 추천단어 자동완성)
+        4. name: 폼 요소를 다른 요소와 식별하는 데 사용
+     -->
+</body>
+</html>
