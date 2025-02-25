@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css문법</title>
+    <style>
+        /* h1은 선택자(태그선택자) .class명(클래스선택자) #id명(아이디선택자) */
+        h1{
+            color:darkgoldenrod;
+            font-size: 50px;
+            /* 속성(프로퍼티): 속성값(벨류값) */
+        }
+
+        #id_section{
+            background-color: aquamarine
+        }
+
+        #id_section > h2{
+            color: red;
+        }
+        /* 자식선택자 */
+
+        article span{
+            color:seagreen
+        }
+        /* 후손선택자 */
+
+        .front_end_lang + li{
+            background-color: aqua;
+        }
+        /* ~ 인접선택자, + 형제선택자 */
+
+        .p_tag, h3, #span_tag{
+            background-color: royalblue;
+            color: white;
+            font-size: 24px;
+            font-weight: 600;
+            display: block;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>클래스 문법 실습</h1>
+    <section id="id_section">
+        <h2 class="red_text">아이디선택자</h2>
+    </section>
+
+    <h2 class="red_text">아이디선택자</h2>
+
+    <article>
+        <div>
+            나는 이렇게 글을 작성하다가 
+            <span class="color_change">이 부분만 색깔 변경</span>
+            할거야
+        </div>
+        <section>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias autem perferendis odio quis saepe est, ut nostrum! Beatae, dignissimos blanditiis vel animi, possimus incidunt quos iusto quibusdam et odio cum.
+        </section>
+        <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit ipsam qui mollitia dolor earum praesentium modi iusto tenetur explicabo doloremque inventore voluptate libero laudantium atque, rem quis ut sequi! Culpa!
+            <span>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt minus eius quidem illum quod optio. Dolorum magni temporibus perspiciatis saepe at autem repellendus adipisci consectetur veritatis facere, assumenda ex maxime?
+            </span>
+        </p>
+    </article>
+
+    <ul>
+        <li>html</li>
+        <li>css</li>
+        <li class="front_end_lang">javascript</li>
+        <li>react</li>
+        <li>vue</li>
+    </ul>
+
+    <div>
+        <p class="p_tag">p태그</p>
+        <h3>헤딩3</h3>
+        <span id="span_tag">span태그</span>
+    </div>
+</body>
+</html>
