@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>가상요소</title>
+    <style>
+        /* .box > p::before{
+            content: "오늘은 그럼 수요일이겠죠?";
+            color: seagreen
+        }
+
+        .box > p::after{
+            content: "연속 4일 쉬어서 좋아요";
+            color: palevioletred;
+        } */
+        /* 가상요소(::before, ::after): 꾸밈있는 요소에 사용하려고 이용함 */
+
+        .box > p::before{
+            width: 200px;
+            height: 1px;
+            background-color: black;
+            content: "";
+            display: block;
+
+        }
+        
+        .box > p::after{
+            content: "";
+            width: 200px;
+            height: 200px;
+            background-color: greenyellow;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <p>내일은 목요일입니다</p>
+    </div>
+</body>
+</html>

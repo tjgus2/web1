@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>박스 hover 이벤트</title>
     <style>
+        *{
+            margin:0;
+        }
+
         .box{
             width: 500px;
             height: 500px;
@@ -20,13 +24,15 @@
             font-size: 50px;
             font-weight: 900;
             transition: 0.5s;
+            margin-bottom: 16px;
         }
 
-        .box:hover{
+        .box:active{
             background-color: black;
+            /* .box: hover 마우스 올려놓을 때, .box:active 마우스 클릭할 때*/
         }
 
-        .box:hover .box_text{
+        .box:active .box_text{
             color: rgb(255, 255, 255);
         }
     </style>
