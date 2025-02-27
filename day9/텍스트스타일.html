@@ -1,16 +1,51 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>텍스트스타일</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cute+Font&display=swap" rel="stylesheet">
     <style>
-        h1{
+        @font-face {
+            font-family: '양진체';
+            src: url('https://fastly.jsdelivr.net/gh/supernovice-lab/font@0.9/yangjin.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: 'ChosunGu';
+            src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@1.0/ChosunGu.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        @font-face{
+            font-family: "Honey Salt";
+            src : url("./Honey\ Salt.otf")
+        }
+
+        .custom_font{
+            font-family: "Honey Salt";
+        }
+
+        /* 글꼴 사이트: 눈누, 구글폰트 */
+
+        body {
+            font-family: 'ChosunGu';
+        }
+
+        /* body 최상위 선택자 */
+
+        h1 {
             color: red;
             font-size: 50px;
         }
 
-        p{
+        p {
             font-weight: 600;
         }
 
@@ -20,98 +55,99 @@
         rem: 최상위 요소의 크기가 달라질 때만 영향을 받음
          */
 
-         /* text-align */
-         .text_align_left{
+        /* text-align */
+        .text_align_left {
             text-align: left;
-         }
-
-         .text_align_center{
-            text-align: center;
-         }
-
-         .text_align_right{
-            text-align: right;
-         }
-
-         .span_container{
-            text-align: center;
-         }
-
-         .right{
-            text-align: right;
-         }
-
-         .center{
-            text-align: center;
-         }
-
-         /* vertical-align */
-        .vertical_container{
-            font-size: 50px;
         }
 
-        .vertical_1 > span{
+        .text_align_center {
+            text-align: center;
+        }
+
+        .text_align_right {
+            text-align: right;
+        }
+
+        .span_container {
+            text-align: center;
+        }
+
+        .right {
+            text-align: right;
+        }
+
+        .center {
+            text-align: center;
+        }
+
+        /* vertical-align */
+        .vertical_container {
+            font-size: 50px;
+            font-family: '양진체';
+        }
+
+        .vertical_1>span {
             vertical-align: top;
             font-size: 16px;
         }
 
-        .vertical_2 > span{
+        .vertical_2>span {
             vertical-align: middle;
             font-size: 16px;
         }
 
-        .vertical_3 > span{
+        .vertical_3>span {
             vertical-align: bottom;
             font-size: 16px;
         }
-        
+
         /* text-decoration */
-        .link_box > a:nth-child(1){
+        .link_box>a:nth-child(1) {
+            font-family: "Cute Font", sans-serif;
             text-decoration: none;
         }
 
-        .link_box > a:nth-child(1):hover{
+        .link_box>a:nth-child(1):hover {
             text-decoration: underline
         }
 
-        .link_box > a:nth-child(2){
+        .link_box>a:nth-child(2) {
             text-decoration: line-through;
         }
 
-        .link_box > a:last-child{
+        .link_box>a:last-child {
             text-decoration: overline;
         }
 
         /* line-height */
-        .line_height > p:first-child{
+        .line_height>p:first-child {
             line-height: 60px;
         }
 
-        .line_height > p:nth-child(2){
+        .line_height>p:nth-child(2) {
             line-height: 1.5;
             font-size: 40px;
             /* line-height값 * font-size 값 = 정확한 line-height px값 계산 가능
             40*1.5=60 임 */
         }
 
-        .line_height > p:last-child{
+        .line_height>p:last-child {
             line-height: 500%;
             /* 폰트 크기 * line=height 값 = 정확한 line-height px값 계산 가능
             16*5=80 임 */
         }
 
         /* letter_spacing */
-        .letter_spacing1{
+        .letter_spacing1 {
             letter-spacing: 10px;
         }
 
-        .letter_spacing2{
+        .letter_spacing2 {
             letter-spacing: -10px;
         }
-
-
     </style>
 </head>
+
 <body>
     <h1>텍스트스타일</h1>
 
@@ -171,5 +207,8 @@
 
     <p class="letter_spacing1">자간을 설정함</p>
     <p class="letter_spacing2">자간을 설정함</p>
+
+    <p class="custom_font">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto reprehenderit corporis deleniti atque culpa id consequuntur labore eos tenetur officiis quos autem animi ipsam adipisci, molestiae dolor facilis? Consectetur, placeat?</p>
 </body>
+
 </html>
