@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>position</title>
+    <style>
+        .container {
+            position: relative;
+            width: 1000px;
+            border: 1px solid #ff0000;
+            height: 500px;
+            margin: 50px
+        }
+
+        .box {
+            position: absolute;
+            width: 150px;
+            height: 50px;
+            text-align: center;
+            line-height: 50px;
+        }
+
+        .b1 {
+            background-color: aqua;
+        }
+
+        .b2 {
+            background-color: rgba(174, 255, 24, 0.596);
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .b3 {
+            background-color: rgb(197, 112, 112);
+            bottom: 0;
+            right: 0;
+        }
+    </style>
+</head>
+
+
+<body>
+    <div class="container">
+        <div class="box b1">왼쪽 위</div>
+        <div class="box b2">중간</div>
+        <div class="box b3">오른쪽 아래</div>
+    </div>
+    <!-- position
+    1. relative: 기준이 될 부모 요소에게 부여함(해당 요소를 기준점으로 삼고싶으면 부여하면 됨) 
+    2. absolute: 기준점을 토대로 움직이고 싶은 요소에게 부여함
+    기준점이 없으면 브라우저를 기준으로 움직임-->
+</body>
+
+</html>

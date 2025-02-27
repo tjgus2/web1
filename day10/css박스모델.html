@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css박스모델</title>
+    <style>
+        body{
+            padding: 0;
+            margin: 0;
+        }
+
+        .box1{
+            width: 300px;
+            height: 200px;
+            border: 16px solid #000;
+            background-color: sandybrown;
+            padding: 25px;
+            /* margin: 30px; */
+        }
+
+        .box2{
+            width: 300px;
+            height: 200px;
+            /* border: 16px solid #000; */
+            border-top: 5px solid #000;
+            border-bottom: 30px double #232;
+            background-color: rgb(96, 244, 133);
+            border-left: 5px dashed #631;
+            border-right: 10px dotted #296;
+            padding: 25px;
+        }
+
+            /* margin: 30px; */
+            /* 한 면씩 지정하는 방법
+            margin-top: 50px;
+            margin-right: 30px;
+            margin-bottom: 10px;
+            margin-left: 100px; */
+            
+            /* t - r- b - l */
+            /* margin: 50px 30px 10px 100px; */
+
+            /* 30: 상하 / 50: 좌우 */
+            /* margin: 30px 50px; */
+
+            /* t--r, l--b */
+            /* margin: 15px 50px 70px; */
+
+            .box_size{
+                background-color: red;
+                width: 300px;
+                height: 300px;
+                margin: 30px;
+                padding: 30px;
+                border: 30px solid #673;
+                box-sizing: border-box;
+            }
+
+            .box_size2{
+                background-color: red;
+                width: 300px;
+                height: 300px;
+                margin: 30px;
+                padding: 30px;
+                border: 30px solid #673;
+            }
+        
+    </style>
+<body>
+    <!-- margin: 요소와 주변 사이의 공간을 뜻함
+    테두리 border 바깥의 영역이기 때문에 다른 요소와 간격을 띄울 때 사용함
+    다른 요소와 마진이 중복되면 겹쳐짐 -->
+
+    <!-- padding: border 안에 존재하며 콘텐츠 영역과 border 사이의 간격을 띄울 때 사용함
+    콘텐츠에 부여한 컬러가 패딩에도 들어감
+    콘텐츠에 포함된다는 뜻 -->
+
+    <!-- border: 콘텐츠의 경계로 콘텐츠 가장자리에 그려지는 외곽선을 뜻함 -->
+
+    <!-- content: 우리가 태그 안에 작성한 내용물 혹은 스타일로 만들어낸 내용물 -->
+
+    <div class="box1">안녕</div>
+    <div class="box2">안녕</div>
+
+    <div class="box_size"></div>
+    <div class="box_size2"></div>
+</body>
+</html>
