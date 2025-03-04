@@ -24,19 +24,27 @@
 
         .b1 {
             background-color: aqua;
+            z-index: 909;
         }
 
         .b2 {
             background-color: rgba(174, 255, 24, 0.596);
-            top: 50%;
+            top: 10px;
+            left: 50px;
+            z-index: 99;
+            /* top: 50%;
             left: 50%;
-            transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%); */
+            /* z-index는 position 옵션이랑 같이 사용해햐 함 */
         }
 
         .b3 {
+            top: 30px;
+            left: 20px;
             background-color: rgb(197, 112, 112);
-            bottom: 0;
-            right: 0;
+            z-index: -1;
+            /* bottom: 0;
+            right: 0; */
         }
     </style>
 </head>
