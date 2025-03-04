@@ -6,12 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>position</title>
     <style>
+        body {
+            height: 5000px;
+        }
+
         .container {
             position: relative;
             width: 1000px;
             border: 1px solid #ff0000;
             height: 500px;
             margin: 50px
+        }
+
+        p {
+            position: absolute;
         }
 
         .box {
@@ -46,12 +54,36 @@
             /* bottom: 0;
             right: 0; */
         }
+
+        .top_btn {
+            position: fixed;
+            bottom: 50px;
+            right: 50px;
+            width: 100px;
+            height: 100px;
+            background-color: black;
+            text-align: center;
+            line-height: 100px;
+            border-radius: 25px;
+        }
+
+        a {
+            text-decoration: none;
+            color: #fff;
+            font-size: 24px;
+            font-weight: 900;
+
+        }
     </style>
 </head>
 
-
 <body>
-    <div class="container">
+    <div class="container" id="top">
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae temporibus doloremque illum obcaecati?
+            Molestias eius nisi suscipit fuga ipsa minima nulla quas quisquam culpa iusto sequi recusandae ratione, ab
+            laborum.
+        </p>
         <div class="box b1">왼쪽 위</div>
         <div class="box b2">중간</div>
         <div class="box b3">오른쪽 아래</div>
@@ -60,6 +92,10 @@
     1. relative: 기준이 될 부모 요소에게 부여함(해당 요소를 기준점으로 삼고싶으면 부여하면 됨) 
     2. absolute: 기준점을 토대로 움직이고 싶은 요소에게 부여함
     기준점이 없으면 브라우저를 기준으로 움직임-->
+
+    <div class="top_btn">
+        <a href="#top">TOP</a>
+    </div>
 </body>
 
 </html>
