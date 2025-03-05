@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex2</title>
+    <style>
+        .flex_flow_container {
+            border: 5px solid red;
+            display: flex;
+            /* flex-wrap: wrap;
+            flex-direction: row-reverse; */
+            flex-flow: row-reverse wrap;
+        }
+
+        .flow_item {
+            width: 300px;
+            height: 300px;
+            background-color: palevioletred;
+            margin: 3px;
+            text-align: center;
+            line-height: 300px;
+        }
+
+        .justify_content>article>div {
+            width: 100px;
+            height: 100px;
+            background-color: sandybrown;
+            margin: 10px;
+        }
+
+        article {
+            display: flex;
+            border: 1px solid #000;
+            margin: 16px;
+            flex-direction: column;
+            height: 800px;
+        }
+
+        .start {
+            justify-content: flex-start;
+        }
+
+        .end {
+            justify-content: flex-end;
+        }
+
+        .center {
+            justify-content: center;
+        }
+
+        .between {
+            justify-content: space-between;
+        }
+
+        .around {
+            justify-content: space-around;
+        }
+
+        .evenly {
+            justify-content: space-evenly;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="flex_flow_container">
+        <div class="flow_item">1</div>
+        <div class="flow_item">2</div>
+        <div class="flow_item">3</div>
+        <div class="flow_item">4</div>
+        <div class="flow_item">5</div>
+        <div class="flow_item">6</div>
+        <div class="flow_item">7</div>
+        <div class="flow_item">8</div>
+    </section>
+
+    <section class="justify_content">
+        <article class="start">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+        </article>
+        <article class="end">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+        </article>
+        <article class="center">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+        </article>
+        <article class="between">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+        </article>
+        <article class="around">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+        </article>
+        <article class="evenly">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+        </article>
+    </section>
+</body>
+</html>
+
+<!-- 
+    1. flex(flex 속성을 부여할 컨테이너가 필요함 section, article, div)
+    2. 가로정렬 할 아이템들을 flex 컨테이너로 묶어주면 됨
+    3. wrap: 아이템들이 부모요소 영역을 넘어가면 width가 작아짐
+    width가 줄어드는 것이 싫다면 줄바꿈하면 밑으로 내려감(반응형)
+    4. direction: 기본값은 row, 세로로 정렬하고 싶다면 column, 역순 reverse
+    5. flex-flow: direction고 wrap을 한꺼번에 작성할 수 있음
+    ex) flex-flow: direction wrap
+    6. justify-content
+    - start: 기본값
+    - end: 끝지점에 가서 붙음
+    - center: 가운데 정렬
+    - space-between: 양 끝 여백없이 콘텐츠 사이에만 여백 나눠먹음
+    - space-around: 콘텐츠를 기준으로 양옆에 여백이 생겨서 1 2 2 1 구조 
+    - space-evenly: 양끝도 같은 비율로 여백 같이 나눠먹음
+-->

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>스티키인터렉션</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* *: 전체 선택자 */
+
+        .height_section {
+            height: 1000px;
+        }
+
+        .sticky_box {
+            display: flex;
+        }
+
+        .sticky_box>figure {
+            position: sticky;
+            width: 50%;
+            height: 100vh;
+            top: 0;
+            flex-shrink: 0;
+        }
+
+        img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .text_box {
+            margin: 300px;
+        }
+
+        .lorem_text {
+            font-size: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="height_section">
+        <div class="lorem_text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam consectetur sed voluptate repellat
+            voluptatibus accusantium tenetur veritatis cumque nulla doloribus. Iste voluptas sequi qui ullam fugit
+            dolore illo possimus quidem.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque nobis dolorum, consequuntur aliquam vero,
+            quibusdam magnam dignissimos ab temporibus labore expedita impedit optio necessitatibus laudantium officia
+            perferendis excepturi exercitationem similique?
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et vel debitis nesciunt, eum blanditiis doloremque
+            quo ab, perspiciatis ea magni tempore harum accusamus, a repellendus reprehenderit? Hic quibusdam veritatis
+            dolorum!
+        </div>
+        <article class="sticky_box">
+            <figure>
+                <img src="./image.png" alt="" class="sticky_img">
+            </figure>
+            <div class="text_container">
+                <div class="text_box">
+                    <h2>아이폰15</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam ipsa harum perferendis mollitia
+                        officia reprehenderit quas dignissimos nostrum aspernatur, accusantium similique ab rerum soluta
+                        rem maxime expedita, quae quos ut?
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim ea, eaque est, excepturi numquam
+                        maiores voluptate obcaecati reprehenderit hic veniam aspernatur, doloribus consectetur voluptas?
+                        Nesciunt ipsum error non dignissimos culpa.
+
+                    </p>
+                </div>
+                <div class="text_box">
+                    <h2>아이폰16</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam ipsa harum perferendis mollitia
+                        officia reprehenderit quas dignissimos nostrum aspernatur, accusantium similique ab rerum soluta
+                        rem maxime expedita, quae quos ut?
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit autem voluptatem dolorum
+                        excepturi ipsum voluptas hic placeat. Tempore praesentium, necessitatibus incidunt harum debitis
+                        ut nobis ipsa! Nesciunt maiores assumenda nam.
+                    </p>
+                </div>
+            </div>
+        </article>
+        <div class="lorem_text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam consectetur sed voluptate repellat
+            voluptatibus accusantium tenetur veritatis cumque nulla doloribus. Iste voluptas sequi qui ullam fugit
+            dolore illo possimus quidem.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque nobis dolorum, consequuntur aliquam vero,
+            quibusdam magnam dignissimos ab temporibus labore expedita impedit optio necessitatibus laudantium officia
+            perferendis excepturi exercitationem similique?
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et vel debitis nesciunt, eum blanditiis doloremque
+            quo ab, perspiciatis ea magni tempore harum accusamus, a repellendus reprehenderit? Hic quibusdam veritatis
+            dolorum!
+        </div>
+    </section>
+</body>
+
+</html>
