@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>네이버 헤더구조실습</title>
+    <style>
+        header {
+            display: flex;
+            flex-direction: column;
+            width: 1200px;
+            margin: 0 auto;
+        }
+
+        .search {
+            height: 80px;
+            background-color: blueviolet;
+            color: #fff;
+            border-radius: 5px;
+            text-align: center;
+            line-height: 80px;
+            font-size: 24px;
+        }
+
+        header > ul {
+            display: flex;
+        }
+
+        li {
+            list-style: none;
+            margin: 5px;
+            text-align: center;
+        }
+
+        li > a {
+            text-decoration: none;
+            color: #000;
+            padding: 3px;
+        }
+
+        .box{
+            background-color: aqua;
+            width: 100px;
+            height: 100px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="search">검색</div>
+        
+        <ul>
+            <li>
+                <div class="box"></div>
+                <a href="#">메일</a>
+            </li>
+            <li>
+                <div class="box"></div>
+                <a href="#">카페</a>
+            </li>
+            <li>
+                <div class="box"></div>
+                <a href="#">블로그</a>
+            </li>
+            <li>
+                <div class="box"></div>
+                <a href="#">스토어</a>
+            </li>
+            <li>
+                <div class="box"></div>
+                <a href="#">뉴스</a>
+            </li>
+            <li>
+                <div class="box"></div>
+                <a href="#">증권</a>
+            </li>
+            <li>
+                <div class="box"></div>
+                <a href="#">부동산</a>
+            </li>
+            <li>
+                <div class="box"></div>
+                <a href="#">지도</a>
+            </li>
+            <li>
+                <div class="box"></div>
+                <a href="#">웹툰</a>
+            </li>
+            <li>
+                <div class="box"></div>
+                <a href="#">치지직</a>
+            </li>
+            
+        </ul>
+    </header>
+    
+</body>
+</html>
