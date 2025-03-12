@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>가상요소이펙트</title>
+    <style>
+        * {
+            background-color: skyblue;
+        }
+
+        header {
+            display: flex;
+        }
+
+        header > p::before{
+            width: 100px;
+            height: 1px;
+            background-color: black;
+            content: "";
+            display: block;
+        }
+
+        p {
+            margin: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <p>html</p>
+        <p>css</p>
+        <p>javascript</p>
+        <p>uxui Design</p>
+        <p>portfolio</p>
+    </header>
+
+    
+</body>
+</html>

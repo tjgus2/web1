@@ -1,49 +1,104 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>myrealtrip</title>
     <style>
         section {
+            display: flex;
+        }
+
+        article {
             width: 250px;
             height: 333px;
             padding: 16px 24px;
-            background: url(./로마.jpeg);
-            background-position: center;        
+            background-position: center;
+            border-radius: 10px;
+            margin: 10px;
         }
 
+        .roma {
+            background: url(./image/로마.jpeg);
+            background-position: center;
+            background-size: cover;
+        }
+
+        .osaka {
+            background: url(./image/오사카.jpg);
+            background-size: cover;
+        }
+
+        .tokyo {
+            background: url(./image/도쿄.jpg);
+            background-position: center;
+            background-size: cover;
+        }
+
+        .london {
+            background: url(./image/런던.jpg);
+            background-size: cover;
+        }
+
+        figure {
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 100%;
+        }
 
         .country {
             color: white;
             font-size: 40px;
             font-weight: 900;
-            border: 1px solid #000;
+            flex-grow: 2;
+            margin: 5px;
         }
-
-        .box {
-            border: 1px solid #000;
-            width: 200px;
-        }
-
-        
-        .search {
-            border: 1px solid #000;
-        }
-
     </style>
 </head>
+
 <body>
     <section>
-        <figure>
-            <div class="country">로마</div>
-            <div class="box"></div>
-            <div class="search">
-                <button>둘러보기</button>
-            </div>
-            
-        </figure>
+        <article class="roma">
+            <figure>
+                <div class="country">로마</div>
+                <div class="search">
+                    <button>둘러보기</button>
+                </div>
+
+            </figure>
+        </article>
+
+        <article class="osaka">
+            <figure>
+                <div class="country">오사카</div>
+                <div class="search">
+                    <button>둘러보기</button>
+                </div>
+            </figure>
+        </article>
+
+        <article class="tokyo">
+            <figure>
+                <div class="country">도쿄</div>
+                <div class="search">
+                    <button>둘러보기</button>
+                </div>
+            </figure>
+        </article>
+
+        <article class="london">
+            <figure>
+                <div class="country">런던</div>
+                <div class="search">
+                    <button>둘러보기</button>
+                </div>
+            </figure>
+        </article>
     </section>
-    
+
 </body>
+
 </html>
